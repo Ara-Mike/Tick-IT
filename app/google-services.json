@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "866279947319",
+    "project_id": "tickit-5aded",
+    "storage_bucket": "tickit-5aded.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866279947319:android:655ced7fc7bb368943d3b2",
+        "android_client_info": {
+          "package_name": "com.example.tick_it"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0HRagnyoB8DBGPAF1CXK7kmWqRJGQap4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

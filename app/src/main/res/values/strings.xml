@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TickIT</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="create_account">Create Account</string>
+    <string name="select_role">Select Role</string>
+    <string name="motorist">Motorist</string>
+    <string name="enforcer">Enforcer</string>
+    <string name="motorist_dashboard">Motorist Dashboard</string>
+    <string name="enforcer_dashboard">Enforcer Dashboard</string>
+    <string name="view_violations">View Violations</string>
+    <string name="pay_fines">Pay Fines</string>
+    <string name="dispute_violations">Dispute Violations</string>
+    <string name="notifications">Notifications</string>
+    <string name="issue_ticket">Issue a Ticket</string>
+    <string name="issued_tickets_history">Issued Tickets History</string>
+    <string name="sync_data">Sync Data</string>
+    <string name="logout">Logout</string>
+    <string name="dont_have_account_register">Don\'t have an account? Register</string>
+    <string name="app_logo">App Logo</string>
+    <string name="drivers_license_number">Driver\'s License Number</string>
+    <string name="drivers_license_required">Driver\'s license number is required for motorists</string>
+</resources>

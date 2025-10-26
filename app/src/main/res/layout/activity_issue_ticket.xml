@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Issue New Ticket"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/black" />
+
+        <!-- Violator Information Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Violator Information"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black" />
+
+            <!-- License Plate -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="License Plate *"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/etLicensePlate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter license plate"
+                android:inputType="textCapCharacters"
+                android:maxLines="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Vehicle Type -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type *"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinnerVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Violator Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Violator Full Name *"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/etViolatorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter full name as on driver's license"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Driver's License Number -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Driver's License Number *"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/etDriverLicense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter driver's license number"
+                android:inputType="textCapCharacters"
+                android:maxLines="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Optional Contact Information -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Optional Contact Information"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Violator Email (Optional) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email (Optional)"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/etViolatorEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter email address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Violator Phone (Optional) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone (Optional)"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/etViolatorPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter phone number"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- Violation Details Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Violation Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black" />
+
+            <!-- Violation Type -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Violation Type *"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <Spinner
+                android:id="@+id/spinnerViolationType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Fine Amount (Auto-populated) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fine Amount"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/etFineAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fine amount"
+                android:text="$0.00"
+                android:enabled="false"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Location -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location *"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter location"
+                android:inputType="text"
+                android:maxLines="2"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Details"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Enter additional details"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:layout_marginEnd="8dp"
+                android:background="@color/gray"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnIssueTicket"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Issue Ticket"
+                android:layout_marginStart="8dp"
+                android:background="@color/primary_color"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
